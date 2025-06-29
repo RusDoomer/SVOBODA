@@ -14,8 +14,8 @@ OBJECTS := $(patsubst $(SRC_DIR)/%.c,$(BUILD_DIR)/%.o,$(SOURCES))
 EXECUTABLE := svoboda
 
 # Compiler flags
-CFLAGS := -I$(INCLUDE_DIR) -I$(INCLUDE_DIR)/stats -Wall -Wextra -pedantic -ffunction-sections -fdata-sections
-LDFLAGS := -lm -lpthread -flto=auto -Wl,--gc-section -Wl,-Map=output.map
+CFLAGS := -I$(INCLUDE_DIR) -I$(INCLUDE_DIR)/stats -Wall -Wextra
+LDFLAGS := -lm -lpthread -flto=auto
 OPT_FLAGS := -O3 -march=native -flto=auto -ffast-math
 DEBUG_FLAGS := -g -fsanitize=address
 

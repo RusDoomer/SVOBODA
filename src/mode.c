@@ -35,9 +35,8 @@ void start_server() {
  */
 void analysis() {
     /* Work for timing total/real layouts/second */
-    layouts_analyzed = 1;
-    struct timespec compute_start, compute_end;
-    clock_gettime(CLOCK_MONOTONIC, &compute_start);
+// struct timespec compute_start, compute_end;
+// clock_gettime(CLOCK_MONOTONIC, &compute_start);
 
     layout *lt;
 
@@ -48,7 +47,7 @@ void analysis() {
 
     /* reads a keyboard layout from a file and initializes a layout structure */
     log_print('n',L"2/6: Reading layout... ");
-    read_layout(lt, 1); /* io.c */
+//  read_layout(lt, 1); /* io.c */
     log_print('n',L"Done\n\n");
 
     /* performs a single layout analysis */
@@ -71,7 +70,7 @@ void analysis() {
     free_layout(lt); /* util.c */
     log_print('n',L"Done\n\n");
 
-    clock_gettime(CLOCK_MONOTONIC, &compute_end);
-    elapsed_compute_time += (compute_end.tv_sec - compute_start.tv_sec) + (compute_end.tv_nsec - compute_start.tv_nsec) / 1e9;
+//  clock_gettime(CLOCK_MONOTONIC, &compute_end);
+//  elapsed_compute_time += (compute_end.tv_sec - compute_start.tv_sec) + (compute_end.tv_nsec - compute_start.tv_nsec) / 1e9;
     return;
 }
