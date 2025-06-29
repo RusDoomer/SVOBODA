@@ -1,3 +1,6 @@
+# the executable
+svoboda
+
 # Prerequisites
 *.d
 
@@ -50,3 +53,10 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# ignoring corpora files
+*.cache
+*.txt
+
+# geany project file
+*.geany
