@@ -64,7 +64,7 @@ void initialize_bi_stats()
     strcpy(stats_bi[index].name, "Left Pinky Bigram");
     stats_bi[index].weight = -INFINITY;
     stats_bi[index].length = 0;
-    stats_bi[index].skip = 0;
+    stats_bi[index].skip = 1;
     for (int i = 0; i < DIM2; i++)
     {
         unflat_bi(i, &row0, &col0, &row1, &col1);
@@ -83,7 +83,7 @@ void initialize_bi_stats()
     strcpy(stats_bi[index].name, "Left Ring Bigram");
     stats_bi[index].weight = -INFINITY;
     stats_bi[index].length = 0;
-    stats_bi[index].skip = 0;
+    stats_bi[index].skip = 1;
     for (int i = 0; i < DIM2; i++)
     {
         unflat_bi(i, &row0, &col0, &row1, &col1);
@@ -102,7 +102,7 @@ void initialize_bi_stats()
     strcpy(stats_bi[index].name, "Left Middle Bigram");
     stats_bi[index].weight = -INFINITY;
     stats_bi[index].length = 0;
-    stats_bi[index].skip = 0;
+    stats_bi[index].skip = 1;
     for (int i = 0; i < DIM2; i++)
     {
         unflat_bi(i, &row0, &col0, &row1, &col1);
@@ -121,7 +121,7 @@ void initialize_bi_stats()
     strcpy(stats_bi[index].name, "Left Index Bigram");
     stats_bi[index].weight = -INFINITY;
     stats_bi[index].length = 0;
-    stats_bi[index].skip = 0;
+    stats_bi[index].skip = 1;
     for (int i = 0; i < DIM2; i++)
     {
         unflat_bi(i, &row0, &col0, &row1, &col1);
@@ -140,7 +140,7 @@ void initialize_bi_stats()
     strcpy(stats_bi[index].name, "Right Index Bigram");
     stats_bi[index].weight = -INFINITY;
     stats_bi[index].length = 0;
-    stats_bi[index].skip = 0;
+    stats_bi[index].skip = 1;
     for (int i = 0; i < DIM2; i++)
     {
         unflat_bi(i, &row0, &col0, &row1, &col1);
@@ -159,7 +159,7 @@ void initialize_bi_stats()
     strcpy(stats_bi[index].name, "Right Middle Bigram");
     stats_bi[index].weight = -INFINITY;
     stats_bi[index].length = 0;
-    stats_bi[index].skip = 0;
+    stats_bi[index].skip = 1;
     for (int i = 0; i < DIM2; i++)
     {
         unflat_bi(i, &row0, &col0, &row1, &col1);
@@ -178,7 +178,7 @@ void initialize_bi_stats()
     strcpy(stats_bi[index].name, "Right Ring Bigram");
     stats_bi[index].weight = -INFINITY;
     stats_bi[index].length = 0;
-    stats_bi[index].skip = 0;
+    stats_bi[index].skip = 1;
     for (int i = 0; i < DIM2; i++)
     {
         unflat_bi(i, &row0, &col0, &row1, &col1);
@@ -197,7 +197,7 @@ void initialize_bi_stats()
     strcpy(stats_bi[index].name, "Right Pinky Bigram");
     stats_bi[index].weight = -INFINITY;
     stats_bi[index].length = 0;
-    stats_bi[index].skip = 0;
+    stats_bi[index].skip = 1;
     for (int i = 0; i < DIM2; i++)
     {
         unflat_bi(i, &row0, &col0, &row1, &col1);
@@ -217,7 +217,7 @@ void initialize_bi_stats()
     strcpy(stats_bi[index].name, "Bad Same Finger Bigram");
     stats_bi[index].weight = -INFINITY;
     stats_bi[index].length = 0;
-    stats_bi[index].skip = 0;
+    stats_bi[index].skip = 1;
     for (int i = 0; i < DIM2; i++)
     {
         unflat_bi(i, &row0, &col0, &row1, &col1);
@@ -237,7 +237,7 @@ void initialize_bi_stats()
     strcpy(stats_bi[index].name, "Bad Left Pinky Bigram");
     stats_bi[index].weight = -INFINITY;
     stats_bi[index].length = 0;
-    stats_bi[index].skip = 0;
+    stats_bi[index].skip = 1;
     for (int i = 0; i < DIM2; i++)
     {
         unflat_bi(i, &row0, &col0, &row1, &col1);
@@ -256,7 +256,7 @@ void initialize_bi_stats()
     strcpy(stats_bi[index].name, "Bad Left Ring Bigram");
     stats_bi[index].weight = -INFINITY;
     stats_bi[index].length = 0;
-    stats_bi[index].skip = 0;
+    stats_bi[index].skip = 1;
     for (int i = 0; i < DIM2; i++)
     {
         unflat_bi(i, &row0, &col0, &row1, &col1);
@@ -275,7 +275,7 @@ void initialize_bi_stats()
     strcpy(stats_bi[index].name, "Bad Left Middle Bigram");
     stats_bi[index].weight = -INFINITY;
     stats_bi[index].length = 0;
-    stats_bi[index].skip = 0;
+    stats_bi[index].skip = 1;
     for (int i = 0; i < DIM2; i++)
     {
         unflat_bi(i, &row0, &col0, &row1, &col1);
@@ -294,7 +294,7 @@ void initialize_bi_stats()
     strcpy(stats_bi[index].name, "Bad Left Index Bigram");
     stats_bi[index].weight = -INFINITY;
     stats_bi[index].length = 0;
-    stats_bi[index].skip = 0;
+    stats_bi[index].skip = 1;
     for (int i = 0; i < DIM2; i++)
     {
         unflat_bi(i, &row0, &col0, &row1, &col1);
@@ -313,7 +313,7 @@ void initialize_bi_stats()
     strcpy(stats_bi[index].name, "Bad Right Index Bigram");
     stats_bi[index].weight = -INFINITY;
     stats_bi[index].length = 0;
-    stats_bi[index].skip = 0;
+    stats_bi[index].skip = 1;
     for (int i = 0; i < DIM2; i++)
     {
         unflat_bi(i, &row0, &col0, &row1, &col1);
@@ -332,7 +332,7 @@ void initialize_bi_stats()
     strcpy(stats_bi[index].name, "Bad Right Middle Bigram");
     stats_bi[index].weight = -INFINITY;
     stats_bi[index].length = 0;
-    stats_bi[index].skip = 0;
+    stats_bi[index].skip = 1;
     for (int i = 0; i < DIM2; i++)
     {
         unflat_bi(i, &row0, &col0, &row1, &col1);
@@ -351,7 +351,7 @@ void initialize_bi_stats()
     strcpy(stats_bi[index].name, "Bad Right Ring Bigram");
     stats_bi[index].weight = -INFINITY;
     stats_bi[index].length = 0;
-    stats_bi[index].skip = 0;
+    stats_bi[index].skip = 1;
     for (int i = 0; i < DIM2; i++)
     {
         unflat_bi(i, &row0, &col0, &row1, &col1);
@@ -370,7 +370,7 @@ void initialize_bi_stats()
     strcpy(stats_bi[index].name, "Bad Right Pinky Bigram");
     stats_bi[index].weight = -INFINITY;
     stats_bi[index].length = 0;
-    stats_bi[index].skip = 0;
+    stats_bi[index].skip = 1;
     for (int i = 0; i < DIM2; i++)
     {
         unflat_bi(i, &row0, &col0, &row1, &col1);
@@ -488,7 +488,7 @@ void initialize_bi_stats()
     strcpy(stats_bi[index].name, "Full Russor Bigram");
     stats_bi[index].weight = -INFINITY;
     stats_bi[index].length = 0;
-    stats_bi[index].skip = 0;
+    stats_bi[index].skip = 1;
     for (int i = 0; i < DIM2; i++)
     {
         unflat_bi(i, &row0, &col0, &row1, &col1);
@@ -507,7 +507,7 @@ void initialize_bi_stats()
     strcpy(stats_bi[index].name, "Half Russor Bigram");
     stats_bi[index].weight = -INFINITY;
     stats_bi[index].length = 0;
-    stats_bi[index].skip = 0;
+    stats_bi[index].skip = 1;
     for (int i = 0; i < DIM2; i++)
     {
         unflat_bi(i, &row0, &col0, &row1, &col1);

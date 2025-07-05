@@ -161,7 +161,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Same Row Alternation");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -180,7 +180,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Same Row Alternation In");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -199,7 +199,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Same Row Alternation Out");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -218,7 +218,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Adjacent Finger Alternation");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -237,7 +237,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Adjacent Finger Alternation In");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -256,7 +256,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Adjacent Finger Alternation Out");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -275,7 +275,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Same Row Adjacent Finger Alternation");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -294,7 +294,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Same Row Adjacent Finger Alternation In");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -313,7 +313,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Same Row Adjacent Finger Alternation Out");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -332,7 +332,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "One Hand");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -351,7 +351,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "One Hand In");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -370,7 +370,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "One Hand Out");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -389,7 +389,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Same Row One Hand");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -408,7 +408,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Same Row One Hand In");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -427,7 +427,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Same Row One Hand Out");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -446,7 +446,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Adjacent Finger One Hand");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -465,7 +465,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Adjacent Finger One Hand In");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -484,7 +484,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Adjacent Finger One Hand Out");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -503,7 +503,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Same Row Adjacent Finger One Hand");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -522,7 +522,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Same Row Adjacent Finger One Hand In");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -541,7 +541,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Same Row Adjacent Finger One Hand Out");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -579,7 +579,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Roll In");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -598,7 +598,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Roll Out");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -617,7 +617,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Same Row Roll");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -636,7 +636,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Same Row Roll In");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -655,7 +655,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Same Row Roll Out");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -674,7 +674,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Adjacent Finger Roll");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -693,7 +693,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Adjacent Finger Roll In");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -712,7 +712,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Adjacent Finger Roll Out");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -731,7 +731,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Same Row Adjacent Finger Roll");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -750,7 +750,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Same Row Adjacent Finger Roll In");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);
@@ -769,7 +769,7 @@ void initialize_tri_stats()
     strcpy(stats_tri[index].name, "Same Row Adjacent Finger Roll Out");
     stats_tri[index].weight = -INFINITY;
     stats_tri[index].length = 0;
-    stats_tri[index].skip = 0;
+    stats_tri[index].skip = 1;
     for (int i = 0; i < DIM3; i++)
     {
         unflat_tri(i, &row0, &col0, &row1, &col1, &row2, &col2);

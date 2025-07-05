@@ -44,7 +44,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Finger Quadgram");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         /* convert a 1D index into a 8D matrix coordinate */
@@ -64,7 +64,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Chained Redirect");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -83,7 +83,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Bad Chained Redirect");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -102,7 +102,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Chained Alternation");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -121,7 +121,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Chained Alternation In");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -140,7 +140,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Chained Alternation Out");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -159,7 +159,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Chained Alternation Mix");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -178,7 +178,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row Chained Alternation");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -197,7 +197,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row Chained Alternation In");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -216,7 +216,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row Chained Alternation Out");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -235,7 +235,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row Chained Alternation Mix");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -254,7 +254,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Adjacent Finger Chained Alternation");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -273,7 +273,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Adjacent Finger Chained Alternation In");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -292,7 +292,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Adjacent Finger Chained Alternation Out");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -311,7 +311,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Adjacent Finger Chained Alternation Mix");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -330,7 +330,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row Adjacent Finger Chained Alternation");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -349,7 +349,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row Adjacent Finger Chained Alternation In");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -368,7 +368,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row Adjacent Finger Chained Alternation Out");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -387,7 +387,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row Adjacent Finger Chained Alternation Mix");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -406,7 +406,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad One Hand");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -425,7 +425,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad One Hand In");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -444,7 +444,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad One Hand Out");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -463,7 +463,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Same Row One Hand");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -482,7 +482,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Same Row One Hand In");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -501,7 +501,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Same Row One Hand Out");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -520,7 +520,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Adjacent Finger One Hand");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -539,7 +539,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Adjacent Finger One Hand In");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -558,7 +558,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Adjacent Finger One Hand Out");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -577,7 +577,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Same Row Adjacent Finger One Hand");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -596,7 +596,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Same Row Adjacent Finger One Hand In");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -615,7 +615,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Same Row Adjacent Finger One Hand Out");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -634,7 +634,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Roll");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -653,7 +653,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Roll In");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -672,7 +672,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Roll Out");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -691,7 +691,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Same Row Roll");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -710,7 +710,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Same Row Roll In");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -729,7 +729,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Same Row Roll Out");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -748,7 +748,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Adjacent Finger Roll");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -767,7 +767,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Adjacent Finger Roll In");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -786,7 +786,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Adjacent Finger Roll Out");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -805,7 +805,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Same Row Adjacent Finger Roll");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -824,7 +824,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Same Row Adjacent Finger Roll In");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -843,7 +843,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Quad Same Row Adjacent Finger Roll Out");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -862,7 +862,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "True Roll");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -881,7 +881,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "True Roll In");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -900,7 +900,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "True Roll Out");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -919,7 +919,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row True Roll");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -938,7 +938,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row True Roll In");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -957,7 +957,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row True Roll Out");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -976,7 +976,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Adjacent Finger True Roll");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -995,7 +995,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Adjacent Finger True Roll In");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -1014,7 +1014,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Adjacent Finger True Roll Out");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -1033,7 +1033,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row Adjacent Finger True Roll");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -1052,7 +1052,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row Adjacent Finger True Roll In");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -1071,7 +1071,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row Adjacent Finger True Roll Out");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -1090,7 +1090,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Chained Roll");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -1109,7 +1109,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Chained Roll In");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -1128,7 +1128,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Chained Roll Out");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -1147,7 +1147,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Chained Roll Mix");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -1166,7 +1166,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row Chained Roll");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -1185,7 +1185,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row Chained Roll In");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -1204,7 +1204,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row Chained Roll Out");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -1223,7 +1223,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row Chained Roll Mix");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -1242,7 +1242,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Adjacent Finger Chained Roll");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -1261,7 +1261,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Adjacent Finger Chained Roll In");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -1280,7 +1280,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Adjacent Finger Chained Roll Out");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -1299,7 +1299,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Adjacent Finger Chained Roll Mix");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -1318,7 +1318,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row Adjacent Finger Chained Roll");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -1337,7 +1337,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row Adjacent Finger Chained Roll In");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -1356,7 +1356,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row Adjacent Finger Chained Roll Out");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);
@@ -1375,7 +1375,7 @@ void initialize_quad_stats()
     strcpy(stats_quad[index].name, "Same Row Adjacent Finger Chained Roll Mix");
     stats_quad[index].weight = -INFINITY;
     stats_quad[index].length = 0;
-    stats_quad[index].skip = 0;
+    stats_quad[index].skip = 1;
     for (int i = 0; i < DIM4; i++)
     {
         unflat_quad(i, &row0, &col0, &row1, &col1, &row2, &col2, &row3, &col3);

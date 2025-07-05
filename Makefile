@@ -15,7 +15,7 @@ EXECUTABLE := svoboda
 
 # Compiler flags
 CFLAGS := -I$(INCLUDE_DIR) -I$(INCLUDE_DIR)/stats -Wall -Wextra
-LDFLAGS := -lm -lpthread -flto=auto
+LDFLAGS := -lmicrohttpd -ljson-c -lpthread -flto=auto
 OPT_FLAGS := -O3 -march=native -flto=auto -ffast-math
 DEBUG_FLAGS := -g -fsanitize=address
 

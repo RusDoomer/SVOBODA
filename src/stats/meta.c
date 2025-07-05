@@ -41,54 +41,54 @@ void initialize_meta_stats()
     /* Initialize hand balance. */
     strcpy(stats_meta[index].name, "Hand Balance");
     stats_meta[index].weight = -INFINITY;
-    stats_meta[index].skip = 0;
+    stats_meta[index].skip = 1;
     index++;
 
     /* Initialize RuSpeed. */
     strcpy(stats_meta[index].name, "RuSpeed");
     stats_meta[index].weight = -INFINITY;
-    stats_meta[index].skip = 0;
+    stats_meta[index].skip = 1;
     index++;
 
     /* Initialize per finger RuSpeed. */
     strcpy(stats_meta[index].name, "Left Pinky RuSpeed");
     stats_meta[index].weight = -INFINITY;
-    stats_meta[index].skip = 0;
+    stats_meta[index].skip = 1;
     index++;
 
     strcpy(stats_meta[index].name, "Left Ring RuSpeed");
     stats_meta[index].weight = -INFINITY;
-    stats_meta[index].skip = 0;
+    stats_meta[index].skip = 1;
     index++;
 
     strcpy(stats_meta[index].name, "Left Middle RuSpeed");
     stats_meta[index].weight = -INFINITY;
-    stats_meta[index].skip = 0;
+    stats_meta[index].skip = 1;
     index++;
 
     strcpy(stats_meta[index].name, "Left Index RuSpeed");
     stats_meta[index].weight = -INFINITY;
-    stats_meta[index].skip = 0;
+    stats_meta[index].skip = 1;
     index++;
 
     strcpy(stats_meta[index].name, "Right Index RuSpeed");
     stats_meta[index].weight = -INFINITY;
-    stats_meta[index].skip = 0;
+    stats_meta[index].skip = 1;
     index++;
 
     strcpy(stats_meta[index].name, "Right Middle RuSpeed");
     stats_meta[index].weight = -INFINITY;
-    stats_meta[index].skip = 0;
+    stats_meta[index].skip = 1;
     index++;
 
     strcpy(stats_meta[index].name, "Right Ring RuSpeed");
     stats_meta[index].weight = -INFINITY;
-    stats_meta[index].skip = 0;
+    stats_meta[index].skip = 1;
     index++;
 
     strcpy(stats_meta[index].name, "Right Pinky RuSpeed");
     stats_meta[index].weight = -INFINITY;
-    stats_meta[index].skip = 0;
+    stats_meta[index].skip = 1;
     index++;
 
     if (index != META_LENGTH) { error("META_LENGTH incorrect for number of meta stats"); }
