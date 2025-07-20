@@ -43,7 +43,7 @@ Here is an example using `curl`:
 ```bash
 curl -X POST -H "Content-Type: application/json" \
 -d '{
-  "layout": "qwertyuiopasdfghjklzxcvbnm,.;'",
+  "layout": "qwertyuiopasdfghjklzxcvbnm,.;'\''",
   "weights": {
     "sfb": -1.5,
     "sfs": -0.7,
@@ -70,4 +70,66 @@ The server will respond with a JSON object containing the raw, unweighted percen
   },
   "score": -7.5318
 }
+```
+
+### Batch Requests
+
+The API also supports batch processing for higher throughput. To use this feature, send a JSON array where each element is a valid single request object as described above.
+
+#### Example Batch Request
+
+```bash
+curl -X POST -H "Content-Type: application/json" \
+-d '[
+  {
+    "layout": "qwertyuiopasdfghjklzxcvbnm,.;'\''",
+    "weights": {
+      "sfb": -1.5,
+      "sfs": -0.7,
+      "lsb": -0.8,
+      "alt": 0.2,
+      "rolls": 0.3
+    }
+  },
+  {
+    "layout": "abcdefghijklmnopqrstuvwxyz,.;'\''",
+    "weights": {
+      "sfb": -1.6,
+      "sfs": -0.6,
+      "lsb": -0.9,
+      "alt": 0.3,
+      "rolls": 0.4
+    }
+  }
+]' \
+http://localhost:8888/
+```
+
+#### Example Batch Response
+
+The server will respond with a JSON array where each element corresponds to a request in the batch, in the same order.
+
+```json
+[
+  {
+    "stat_values": {
+      "sfb": 4.8312,
+      "sfs": 1.1098,
+      "lsb": 0.4311,
+      "alt": 6.3321,
+      "rolls": 5.7812
+    },
+    "score": -7.5318
+  },
+  {
+    "stat_values": {
+      "sfb": 11.2045,
+      "sfs": 9.6704,
+      "lsb": 5.9067,
+      "alt": 16.4498,
+      "rolls": 37.8413
+    },
+    "score": -18.7840
+  }
+]
 ```
